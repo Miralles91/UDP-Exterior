@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <DadesPlaneta>
+	<IP>"172.17.20.186"</IP>
+	<CODI>12345</CODI>
+  </DadesPlaneta>
+</root>

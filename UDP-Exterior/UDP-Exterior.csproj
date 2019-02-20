@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="UDP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UDP.Designer.cs">
+      <DependentUpon>UDP.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,6 +63,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UDP.resx">
+      <DependentUpon>UDP.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +78,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GestionClavesRSA-master\GestionRSA\ConnectionClass\ConnectionClass.csproj">
+      <Project>{4a0d0623-3d0a-4ba3-b1fd-c73e57cb8d53}</Project>
+      <Name>ConnectionClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GestionClavesRSA-master\GestionRSA\GestionRSA\GestionRSA.csproj">
+      <Project>{43610cf0-7035-4a4d-a7c3-20e2cf8358f2}</Project>
+      <Name>GestionRSA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Biblioteca-UDP\Biblioteca-Planeta.csproj">
+      <Project>{50a947bf-0b27-4547-acf7-1e1df3e748de}</Project>
+      <Name>Biblioteca-Planeta</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
