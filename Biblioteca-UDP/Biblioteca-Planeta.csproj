@@ -47,5 +47,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servidor.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\GestionClavesRSA-master\GestionRSA\GestionRSA\GestionRSA.csproj">
+      <Project>{43610CF0-7035-4A4D-A7C3-20E2CF8358F2}</Project>
+      <Name>GestionRSA</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
